@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #620b88, #550840fd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.main h1{
+    font-size: 35px;
+    font-weight: 500;
+    margin: 25px;
+    color: white;
+}
+
+.main h1 span{
+    color: #9a1ad1;
+    text-decoration: underline;
+}
+
+.content{
+    height: 250px;
+    width: 600px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    resize: none;
+    margin-bottom: 25px;
+    background-color: #752a96;
+    color: #fff;
+}
+
+.content::placeholder{
+    font-size: 15px;
+    color: #ddd
+}
+
+.control{
+    width: 600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 0 20px;
+}
+
+
+.control button{
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #9a1ad1;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+
+
+.control button .bi{
+    font-size: 20px;
+    margin-right: 10px;
+    
+}
+
+
+.control select{
+    flex: 1;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    padding: 5px 30px;
+    opacity: 0.5;
+    background-color: #9535bee3;
+    color: #ddd;
+    appearance: none;
+    height: 40px;
+}
+
+/*Responsiveness */
+
+@media (max-width: 768px){
+    h1{
+
+        font-size: 1.4rem;
+    }
+    .content{
+        height: 120px;
+
+    }
+
+    .control{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .control button{
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    textarea {
+        height: 100px;
+    }
+    
+    button {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
